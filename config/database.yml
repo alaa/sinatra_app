@@ -1,4 +1,4 @@
-development:
+default: &default
   adapter: mysql2
   encoding: utf8
   database: proxy
@@ -6,3 +6,11 @@ development:
   password: root
   host: 127.0.0.1
   port: 3306
+
+development:
+  <<: *default
+  database: proxy_development
+
+test:
+  <<: *default
+  database: proxy_test
