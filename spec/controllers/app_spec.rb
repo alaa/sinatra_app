@@ -1,6 +1,6 @@
 ENV['RACK_ENV'] = 'test'
 
-require_relative './rspec_helper'
+require_relative '../rspec_helper'
 
 describe 'API' do
 
